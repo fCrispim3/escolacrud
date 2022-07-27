@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css" type="text/css" media="all"/>
+
+
+    <title>Cadastrar Aluno</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cadastrar-aluno">Cadastrar Aluno</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cadastrar-professor">Cadastrar Professor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cadastrar-turma">Cadastrar Turma</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Consultar Dados
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/consultar-aluno">Consultar Alunos</a></li>
+                      <li><a class="dropdown-item" href="/consultar-professor">Consultar Professores</a></li>
+                      <li><a class="dropdown-item" href="/consultar-turma">Consultar Turmas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <h1 > Cadastrar Turma</h1>
+    <hr />
+
+    <div class="container">
+        <main>
+            <form action="" method="post">
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0"><b>Código da Turma e Disciplina</b></legend>
+                    <label for="" class="form-label">Código da Turma</label>
+                    <input type="text" class="form-control" id="" aria-describedby="" name="codTurma" value=""
+                        placeholder="Código da Turma" required>
+                    <label for="" class="form-label">Disciplina</label>
+                    <select class="form-select" aria-label="Default select example" name="disciplina">
+                        <option selected value="">Selecione a Disciplina</option>
+                        <option value="Artes" >Artes</option>
+                        <option value="Biologia" >Biologia</option>
+                        <option value="Ed-Fisica" >Educação Física</option>
+                        <option value="Filosofia" >Filosofia</option>
+                        <option value="Fisica" >  Física</option>
+                        <option value="Geografia" >Geografia</option>
+                        <option value="Historia" >História</option>
+                        <option value="Ling-inglesa" >Língua Inglesa</option>
+                        <option value="Ling-portuguesa" >Língua Portuguesa</option>
+                        <option value="Matematica" >Matemática</option>
+                        <option value="Quimica" >Química</option>
+                        <option value="Sociologia">Sociologia</option>
+                      </select>
+                            
+                </fieldset>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0"><b>Turno e Período</b></legend>
+                    <label for="" class="form-label">Turno</label>
+                    
+                            <div class="col-sm-10" style="margin-left: 75px; margin-top: 15px;">
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="turno" id="gridRadios1"
+                                        value="masculino" checked required >
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Matutino
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="turno" id="gridRadios2"
+                                        value="vespertino" required>
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Vespertino
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="turno" id="gridRadios3"
+                                        value="Noturno" required>
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Noturno
+                                    </label>
+                                </div>
+                            </div>
+                    <label for="" class="form-label">Período</label>
+                            <div class="col-sm-10" style="margin-left: 75px; margin-top: 15px;">
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="periodo" id="gridRadios1"
+                                        value="1°-Ano" checked required >
+                                    <label class="form-check-label" for="gridRadios1">
+                                        1° Ano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="periodo" id="gridRadios2"
+                                        value="2°-Ano" required>
+                                    <label class="form-check-label" for="gridRadios2">
+                                        2° Ano
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="periodo" id="gridRadios3"
+                                        value="3°-Ano" required>
+                                    <label class="form-check-label" for="gridRadios3">
+                                        3° Ano
+                                    </label>
+                                </div>
+                            </div>
+                </fieldset>
+                </fieldset>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0"><b>Quantidade de Alunos Máxima</b></legend>   
+                    <label for="" class="form-label">Capacidade</label>
+                            <div class="col-sm-10" style="margin-left: 75px; margin-top: 15px;">
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="qtdAlunos" id="gridRadios1"
+                                        value="20" checked required >
+                                    <label class="form-check-label" for="gridRadios1">
+                                        20 Alunos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="qtdAlunos" id="gridRadios2"
+                                        value="30" required>
+                                    <label class="form-check-label" for="gridRadios2">
+                                        30 Alunos
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="qtdAlunos" id="gridRadios3"
+                                        value="50" required>
+                                    <label class="form-check-label" for="gridRadios3">
+                                        50 Alunos
+                                    </label>
+                                </div>
+                            </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
